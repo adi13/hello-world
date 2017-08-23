@@ -20,7 +20,7 @@ push-quay:
         registry: https://quay.io
         tag: $WERCKER_GIT_COMMIT
         working-dir: /pipeline/source
-        ports: "8080"
+        ports: "1144"
         cmd: ./hello-world
 
 deploy-to-kubernetes:
