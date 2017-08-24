@@ -14,9 +14,9 @@ build:
 push-quay:
   steps:
     - internal/docker-push:
-        repository: $DOCKER_REPO
-        username: $DOCKER_USERNAME
-        password: $DOCKER_PASSWORD
+        repository: $DOCKERHUB_REPO
+        username: $DOCKERHUB_USERNAME
+        password: $DOCKERHUB_PASSWORD
         registry: https://quay.io
         tag: $WERCKER_GIT_COMMIT
         working-dir: /pipeline/source
